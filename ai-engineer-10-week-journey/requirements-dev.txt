@@ -1,0 +1,5 @@
+# Lightweight shared development tools; install AI/ML packages only when needed for the active week.
+jupyterlab
+ipykernel
+pytest
+ruff

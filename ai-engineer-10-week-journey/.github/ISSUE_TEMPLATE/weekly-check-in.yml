@@ -1,0 +1,45 @@
+name: Weekly learning check-in
+description: Record the week's build, evidence, and blockers
+title: "Week XX check-in: "
+labels: [learning-journal]
+body:
+  - type: input
+    id: week
+    attributes:
+      label: Week number and dates
+      placeholder: "Week 01 — 12–18 Oct 2026"
+    validations:
+      required: true
+  - type: input
+    id: hours
+    attributes:
+      label: Focused hours
+      placeholder: "6.5"
+    validations:
+      required: true
+  - type: textarea
+    id: learned
+    attributes:
+      label: What did you learn?
+      description: Explain the main idea in your own words.
+    validations:
+      required: true
+  - type: textarea
+    id: build
+    attributes:
+      label: What did you build or test?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Link commits, files, tests, metrics, screenshots, or demo.
+    validations:
+      required: false
+  - type: textarea
+    id: blockers
+    attributes:
+      label: Blockers and next action
+    validations:
+      required: false
